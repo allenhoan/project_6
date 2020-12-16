@@ -10,8 +10,8 @@
   $class = $_POST['class'];
 
   if(isset($_POST['class'])){
-    if($class=="all")$query = "SELECT * FROM poster ";
-    else $query = "SELECT * FROM poster WHERE class = '$class'";
+    if($class=="all")$query = "SELECT * FROM poster ORDER BY postDate DESC";
+    else $query = "SELECT * FROM poster WHERE class = '$class' ORDER BY postDate DESC";
    $result =  $connect->query($query);
    
    $arr = array();

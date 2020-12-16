@@ -7,6 +7,7 @@ var loadFile = function(event) {
 };
 $(document).ready(function() {
     function load1() {
+        $("#feature").hide();
         $.ajax({
             url: "getMemberData.php",
             method: "POST",
@@ -114,4 +115,29 @@ $(document).ready(function() {
         readmode();
 
     })
+
+    $('#butt1-4').click(function() {
+        $('#feature').toggle();
+    });
+    $('#feature').click(function() {
+        let feature = event.srcElement.id;
+        if(feature=='logout'){
+            $.ajax({
+                url: "logout.php",
+                data: {},
+                type: "POST",
+                async: false,
+                beforeSend: function() {},
+                success: function(msg) {
+                    //console.log(msg);
+                    window.location="login.html";
+                },
+                error: function(xhr) {
+                    alert('Ajax request 發生錯誤');
+                },
+                complete: function() {}
+            });
+        }
+       
+    });
 });

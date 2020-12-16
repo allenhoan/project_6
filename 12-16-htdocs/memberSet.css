@@ -16,6 +16,7 @@ body{
 	line-height: 60px;
 	font-size: 24px;
 	font-weight: bold;
+	cursor:pointer;
 }
 .butt1{
 	width: 40px;
@@ -23,7 +24,8 @@ body{
 	margin-top: 9px;
 	background-color: rgba(1,1,1,0);
 	border: none;
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
+	cursor:pointer; 
 }
 .butt1:hover{
 	background: #66B3FF;
@@ -153,16 +155,28 @@ input:disabled{
 	border: 1px solid rgba(0,0,0,0.5);
 	color: black;
 }
-
-.ic1{
-	margin-top: 6px;
-	border:1 #BEBEBE;
-	cursor:pointer;
-	border-radius: 5px;
+#d1-3{
+	position: absolute;
+	left: 1460px;
+	top: 60px;
+	width: 65px;
+	height: 100px;
+	/* border : 2px solid #97CBFF;
+	background-color : rgba(255,255,255,1);
+	text-align: center; */
 }
-.ic1:focus {
-	font-size : 8px;
-	letter-spacing: 1.2px;　 
-	font-weight:550; 
-	border : 3px solid #000079;
+#feature{
+	width: 65px;
+	background-color: white;
+	border: 1px solid 	#00AEAE;
+	border-collapse:collapse;
+	text-align: center;
+}
+table tr.feature {
+	font-size: 18px;
+	font-weight: 300;
+	background: white;
+	border: 1px solid 	#00AEAE;
+	border-collapse:collapse;
+	cursor:pointer;
 }

@@ -16,6 +16,7 @@ body{
 	line-height: 60px;
 	font-size: 24px;
 	font-weight: bold;
+	cursor:pointer;
 }
 #d2 {
     line-height: 20px;
